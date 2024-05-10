@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    color: red;
+    text-align: center;
+    /* text-decoration: dotted; */
+    /* font-size: x-large; */
+    /* font-size: ; */
+    font-size: 4opx;
+    /* text-transform: capitalize; */
+    text-transform: lowercase;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    line-height: 30px;
+}

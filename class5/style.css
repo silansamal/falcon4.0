@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_div {
+    border: 1px solid;
+    width: 800px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
+background-color: aqua;
+padding-top: 10px;
+padding-left: 10px;
+
+}
+.box{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    
+}
