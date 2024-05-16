@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main_div {
+h1{
+    font-size: large;
+}
+
+.main_dev{
     border: 1px solid;
+    
     width: 800px;
     height: 300px;
     margin-left: 100px;

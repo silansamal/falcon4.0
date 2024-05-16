@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+background-color: black;
+display: grid;
+grid-template-columns: repeat(5, 100px);
+grid-template-rows: repeat(2, 100px);
+column-gap: 100px;
+row-gap: 50px;
+}
+
+.box{
+    border:1px solid;
+    width: 100px;
+    height: 100px;
+    text-align: center ;
+
+    
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: orange;
+}
+#box3{
+    background-color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+#box4{
+    background-color: aquamarine;
+}
+#box5{
+    background-color: blueviolet;
+    
+    
+}

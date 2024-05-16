@@ -1,0 +1,48 @@
+td{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: large;
+    border: 2px;
+}
+.number{
+    line-height: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.name{
+    line-height: opx;
+    font-weight: bold;
+}
+.category1{
+    background-color: green;
+}
+.category2{
+    background-color: red;
+}
+.category3{
+    background-color: orange;
+}
+.category4{
+    background-color: aqua;
+}
+.category5{
+    background-color: gray;
+}
+.category6{
+    background-color: yellow;
+}
+.category7{
+    background-color: brown;
+}
+.category8{
+    background-color: rgb(65, 7, 201);
+}
+.category9{
+    background-color: rgb(10, 192, 146);
+}
+H1{
+    background-color: yellow;
+    width: 600PX;
+    line-height: 40PX;
+}

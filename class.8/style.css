@@ -1,0 +1,36 @@
+body{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    padding:20px 50px ;
+    border: transparent;
+    border-radius: 10px;
+    transition: 2s ease-in-out;
+    transform: scale(1.5);
+    animation-fill-mode: backwards;
+
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: yellow ;
+    font-size: 40px;
+    transform: rotate(360deg);
+    animation: btnMoving 2s forwards;
+
+}
+@keyframes btnMoving {
+    from{
+        transform: translateY(-30px) ;
+    }
+    to{
+        opacity: 1 ;
+        transform: translateY(opx);
+    }
+}
