@@ -1,49 +1,49 @@
+// on load
+const myName = prompt("Please enter your name: ");
+window.addEventListener("load", () => {
+  alert(`Hey ${myName} welcome back`);
+});
 // select the element
 
-const body = docoment.quwreryselector("body");
+const body = document.querySelector("body");
 const heading = document.querySelector(".heading");
-const color = docoment.quwreryselector(".color");
+const color = document.querySelectorAll(".color");
 
-//generate random color
+// generate random color in hexacode #212121
 
-function generateRandomColor(){
-    let randomcolor = "#";
-    for (let i=0; i<6; i++){
-        randomcolor += math.floor(math.randomcolor() * 16).tostring(16);
-    }
-    return randomcolor;
-
+function generateRandomColor() {
+  let randomColor = "#";
+  for (let i = 0; i < 6; i++) {
+    randomColor += Math.floor(Math.random() * 16).toString(16);
+  }
+  return randomColor;
 }
 
-function colorchanger(e){
-    // console.log(e.target.id);
-    switch (e.target.id) {
-        case "grey":
-            body.style.backgroundcolor = "grey"
-            break;
-
-            case "green":
-            body.style.backgroundcolor = "green"
-            break;
-
-            case "black":
-                body.style.backgroundcolor = "black"
-                break;
-
-            case "blue":
-            body.style.backgroundcolor = "blue"
-            break;
-
-            case "random":
-            body.style.backgroundcolor = "random"
-            break;
-    
-        default:
-            body.style.backgroundcolor = "white"
-            break;
-    }
+function colorChanger(e) {
+  //   console.log(e.target.id);
+  switch (e.target.id) {
+    case "grey":
+      body.style.backgroundColor = "grey";
+      break;
+    case "green":
+      body.style.backgroundColor = "green";
+      break;
+    case "black":
+      body.style.backgroundColor = "black";
+      heading.style.color = "white";
+      break;
+    case "blue":
+      body.style.backgroundColor = "blue";
+      break;
+    case "random":
+      body.style.backgroundColor = generateRandomColor();
+      break;
+    default:
+      body.style.backgroundColor = "white";
+      break;
+  }
 }
 
 color.forEach((color) => {
-    color.addEventListener("click", (e) => colorChange(e));
-  });
+  color.addEventListener("click", (e) => colorChanger(e));
+});
